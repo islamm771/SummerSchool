@@ -301,7 +301,7 @@ const Home = () => {
             <p>A Traveling agency you can trust and rely on</p>
           </div>
           <div className="row">
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <div className="choose-item">
                 <span className="icon">
                   <svg
@@ -335,7 +335,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <div className="choose-item">
                 <span className="icon">
                   <svg
@@ -360,7 +360,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <div className="choose-item">
                 <span className="icon">
                   <svg
@@ -399,7 +399,7 @@ const Home = () => {
       <footer>
         <div className="container">
           <div className="row">
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <div className="footer-item">
                 <h5> 
                   <img src="/img/footer_logo.png" alt="" />
@@ -424,8 +424,7 @@ const Home = () => {
               </div>
             </div>
 
-
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <div className="footer-item contact">
                 <h5>Contact Us</h5>
 
@@ -445,7 +444,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <div className="footer-item subscribe">
                 <h5>SUBSCRIBE</h5>
 
