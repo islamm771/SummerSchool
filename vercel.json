@@ -5,55 +5,55 @@
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram",
+            "src":"/socialprogram",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/montazah-palace",
+            "src":"/socialprogram/montazah-palace",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/montazah-palace",
+            "src":"/socialprogram/montazah-palace",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/roman-amphitheatre",
+            "src":"/socialprogram/roman-amphitheatre",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/pompey's-pillar",
+            "src":"/socialprogram/pompey's-pillar",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/bibliotheca-alexandrina",
+            "src":"/socialprogram/bibliotheca-alexandrina",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/alexandria-national-museum",
+            "src":"/socialprogram/alexandria-national-museum",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/catacombs-of-Kom-el-Shogafa",
+            "src":"/socialprogram/catacombs-of-Kom-el-Shogafa",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/sky-roof",
+            "src":"/socialprogram/sky-roof",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/De-La-paix-cafe",
+            "src":"/socialprogram/De-La-paix-cafe",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/mohamed-ahmed",
+            "src":"/socialprogram/mohamed-ahmed",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/arous-elBahr-restaurant",
+            "src":"/socialprogram/arous-elBahr-restaurant",
             "dest" : "/"
         },
         {
-            "src":"/marketplace/socialprogram/greek-museum",
+            "src":"/socialprogram/greek-museum",
             "dest" : "/"
         }
         
