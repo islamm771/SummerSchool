@@ -1,0 +1,81 @@
+.social-page header{
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-page header h1{
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.social-page .programs{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0;
+    position: relative;
+}
+
+.social-page .programs .programs-header{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.social-page .programs-header h5{
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+.social-page .programs-header p{
+    color: #004EA6;
+    font-weight: 400;
+}
+.social-page .programs-header p span{
+    color: #FBA60A;
+    font-weight: 600;
+}
+.social-page .programs-header .sentence{
+    font-weight: 800;
+}
+.social-page .programs .programs-title{
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #0F2742;
+    font-weight: 600;
+}
+
+.social-page .programs .apply-now{
+    background-color: #004EA6;
+    padding: 10px 55px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+
+.social-page .program-card{
+    background-color: #F6FAFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+.social-page .program-card .program-card-body{
+    padding: 32px 20px;
+}
+.social-page .program-card .program-card-body h3{
+    color: #004EA6;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.social-page .program-card .program-card-body a{
+    color: #FBA60A;
+    font-weight: 500;
+    font-size: 20px;
+}
+

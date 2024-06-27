@@ -5,8 +5,11 @@ import { FaFacebookF, FaRegEnvelope, FaSnapchatGhost, FaTiktok } from "react-ico
 import { RiInstagramFill } from "react-icons/ri";
 const Home = () => {
   const [activeHeader, setActiveHeader] = useState(1);
+  const [activeLink , setActiveLink] = useState('home')
+
+  
   return (
-    <div>
+    <div className="home">
       <header id="home">
         <nav className="navbar navbar-expand-lg">
           <div className="container">
@@ -34,25 +37,36 @@ const Home = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a
-                    className="nav-link active"
-                    aria-current="page"
+                    className={`nav-link ${activeLink === "home" ? "active" : ""}`}
                     href="#home"
+                    onClick={() => setActiveLink("home")}
                   >
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#about">
+                  <a 
+                  href="#about"
+                  className={`nav-link ${activeLink === "about" ? "active" : ""}`}
+                  onClick={() => setActiveLink("about")}
+                  >
                     About Us
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#programs">
+                  <a 
+                  href="#programs"
+                  className={`nav-link ${activeLink === "program" ? "active" : ""}`}
+                  onClick={() => setActiveLink("program")}
+                  >
                     Programs
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#contact">
+                  <a href="#contact"
+                  className={`nav-link ${activeLink === "contact" ? "active" : ""}`}
+                  onClick={() => setActiveLink("contact")}
+                  >
                     Contact
                   </a>
                 </li>
@@ -210,7 +224,7 @@ const Home = () => {
                   <h3>Social Program</h3>
                 </div>
                 <div className="program-card-footer">
-                  <button className="custom-button">Explore</button>
+                  <a href="/socialprogram" className="custom-button">Explore</a>
                 </div>
               </div>
             </div>
@@ -225,7 +239,7 @@ const Home = () => {
                   <h3>Trips</h3>
                 </div>
                 <div className="program-card-footer">
-                  <button className="custom-button">Explore</button>
+                  <a href="#" className="custom-button">Explore</a>
                 </div>
               </div>
             </div>
@@ -240,7 +254,7 @@ const Home = () => {
                   <h3>Optional Trips</h3>
                 </div>
                 <div className="program-card-footer">
-                  <button className="custom-button">Explore</button>
+                  <a href="#" className="custom-button">Explore</a>
                 </div>
               </div>
             </div>
@@ -311,10 +325,10 @@ const Home = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_37_33)">
+                    <g clipPath="url(#clip0_37_33)">
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule={"evenodd"}
                         d="M60 19.2856C56.7698 19.2857 53.6259 20.3286 51.036 22.259C48.4462 24.1895 46.5486 26.9044 45.6257 29.9999H74.3743C73.4514 26.9044 71.5538 24.1895 68.964 22.259C66.3741 20.3286 63.2302 19.2857 60 19.2856ZM40.3029 14.5885C36.1692 18.7215 33.4404 24.0502 32.5029 29.8199C32.5248 30.0135 32.5362 30.208 32.5371 30.4028V119.597C32.5371 119.734 32.5371 119.863 32.52 120H87.48C87.4692 119.866 87.4635 119.732 87.4629 119.597V30.4028C87.4641 30.208 87.4755 30.0135 87.4971 29.8199C86.6749 24.7582 84.4714 20.0217 81.1294 16.1322C77.7874 12.2427 73.4367 9.3512 68.5565 7.77617C63.6763 6.20115 58.4561 6.00376 53.4709 7.20576C48.4857 8.40775 43.929 10.9625 40.3029 14.5885ZM98.16 29.9999C98.1708 30.1339 98.1765 30.2683 98.1771 30.4028V119.597C98.1771 119.734 98.1771 119.863 98.16 120H98.5714C101.385 120 104.172 119.446 106.772 118.369C109.372 117.292 111.734 115.713 113.724 113.724C115.714 111.734 117.292 109.372 118.369 106.772C119.446 104.172 120 101.385 120 98.5714V51.4285C120 45.7453 117.742 40.2948 113.724 36.2762C109.705 32.2576 104.255 29.9999 98.5714 29.9999H98.16ZM21.4286 29.9999H21.84C21.8293 30.134 21.8236 30.2683 21.8229 30.4028V119.597C21.8229 119.734 21.8229 119.863 21.84 120H21.4286C18.6145 120 15.828 119.446 13.2282 118.369C10.6284 117.292 8.26611 115.713 6.27628 113.724C4.28646 111.734 2.70804 109.372 1.63115 106.772C0.554266 104.172 0 101.385 0 98.5714L0 51.4285C0 45.7453 2.25765 40.2948 6.27628 36.2762C10.2949 32.2576 15.7454 29.9999 21.4286 29.9999Z"
                         fill="#FBA60A"
                       />
@@ -375,8 +389,9 @@ const Home = () => {
                       fill="#FBA60A"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      
+                      clipRule="evenodd"
                       d="M14.8399 47.4255C15.8062 47.3832 16.7515 47.716 17.4782 48.3542C18.205 48.9924 18.657 49.8868 18.7399 50.8505L23.5899 107.03C23.6721 107.867 23.5828 108.712 23.3276 109.513C23.0724 110.314 22.6566 111.054 22.1056 111.689C21.5546 112.324 20.88 112.84 20.1229 113.205C19.3659 113.57 18.5423 113.778 17.7024 113.814C16.8626 113.851 16.0241 113.715 15.2383 113.417C14.4524 113.118 13.7357 112.663 13.1318 112.078C12.5279 111.493 12.0496 110.791 11.726 110.016C11.4025 109.24 11.2405 108.406 11.2499 107.565V51.1705C11.2503 50.2039 11.6239 49.2748 12.2928 48.577C12.9617 47.8792 13.8742 47.4667 14.8399 47.4255Z"
                       fill="#FBA60A"
                     />
@@ -396,7 +411,7 @@ const Home = () => {
       </div>
 
 
-      <footer>
+      <footer id="contact">
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">

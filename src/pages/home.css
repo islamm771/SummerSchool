@@ -1,4 +1,4 @@
-header{
+.home header{
     height: 100vh;
 }
 nav{
@@ -79,14 +79,6 @@ nav a:hover{
     font-weight: 800;
     margin-bottom: 10rem;
     font-size: 40px;
-}
-
-.custom-button{
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 5px 45px;
-    border-radius: 20px;
 }
 
 header .pagination{
@@ -192,7 +184,7 @@ header .pagination ul li span.active{
     text-align: center;
     padding: 10px;
 }
-.our-programs .program-card .program-card-footer button{
+.our-programs .program-card .program-card-footer a{
     background-color: #003775;
     margin-top: 10px;
 }
@@ -232,6 +224,12 @@ header .pagination ul li span.active{
     font-size: 30px;
 }
 
+@media (width <= 992px){
+    .explore p{
+        width: 100%;
+    }
+}
+
 .explore p span{
     color: #FBA60A;
 }
@@ -241,6 +239,7 @@ header .pagination ul li span.active{
     justify-content: center;
     gap: 40px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .explore .explore-card{
