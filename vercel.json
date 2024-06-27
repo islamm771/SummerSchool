@@ -1,0 +1,61 @@
+{
+    "routes":[
+        {
+            "src":"/",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/montazah-palace",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/montazah-palace",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/roman-amphitheatre",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/pompey's-pillar",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/bibliotheca-alexandrina",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/alexandria-national-museum",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/catacombs-of-Kom-el-Shogafa",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/sky-roof",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/De-La-paix-cafe",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/mohamed-ahmed",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/arous-elBahr-restaurant",
+            "dest" : "/"
+        },
+        {
+            "src":"/marketplace/socialprogram/greek-museum",
+            "dest" : "/"
+        }
+        
+    ]
+}
