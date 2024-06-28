@@ -81,7 +81,7 @@
             "dest" : "/"
         },
         {
-            "src":"/transport/",
+            "src":"/transport",
             "dest" : "/"
         }
 
