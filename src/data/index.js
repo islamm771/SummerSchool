@@ -168,3 +168,82 @@ export const socialPrograms = [
     `
   },
 ];
+
+export const trip = [
+  {
+    id: 1,
+    title: "Cairo",
+    name: "cairo",
+    img: "/img/programs/trip/img-01.png",
+    desciption: `Cairo, the capital and largest city of Egypt, 
+    is a bustling metropolis with a rich history, vibrant culture, 
+    and a dynamic blend of the ancient and the modern.Home to the 
+    iconic Pyramids of Giza, including the Great Pyramid of Khufu, 
+    the Sphinx, and several ancient tombs.A bustling market with 
+    narrow lanes selling a variety of goods, including spices, 
+    jewelry, textiles, and souvenirs.`,
+  },
+  {
+    id: 2,
+    title: "Siwa",
+    name: "siwa",
+    img: "/img/programs/trip/img-02.png",
+    desciption: `Nestled amidst the breathtaking expanse of Egypt's 
+    Western Desert lies the enchanting oasis of Siwa. Renowned for 
+    its serene beauty and ancient allure, Siwa captivates visitors 
+    with its verdant date palms, shimmering salt lakes, and towering 
+    sand dunes. Steeped in history and mythology, this oasis is home 
+    to the iconic Oracle Temple of Amun, where whispers of the past 
+    echo through the windswept landscapes.`,
+  },
+];
+
+
+export const optionaTrip = [
+  {
+    id: 1,
+    title: "Northcoast",
+    name: "northcoast",
+    img: "/img/programs/optional/img-01.png",
+    desciption: `Welcome to Egypt's North Coast, 
+    where the Mediterranean meets unmatched beauty 
+    and leisure. Stretching along the northern shores 
+    of the country, this coastal gem boasts an array 
+    of pristine beaches, each offering a retreat of 
+    sun-soaked sands and crystal-clear waters. From 
+    the vibrant shores of Marina to the tranquil bays 
+    of Sidi Abdel Rahman, every stretch of coastline 
+    invites you to unwind in luxury and serenity.`,
+  },
+  {
+    id: 2,
+    title: "Luxor and Aswan",
+    name: "luxor-aswan",
+    img: "/img/programs/optional/img-02.png",
+    desciption: `Luxor and Aswan, two jewels along 
+    the timeless Nile, stand as testament to Egypt's rich history 
+    and enduring legacy. In Luxor, the fabled city of Thebes, 
+    marvel at the grandeur of the Temple of Karnak, 
+    where colossal statues and towering pillars 
+    whisper tales of ancient pharaohs. Traverse 
+    the tranquil waters of the Nile to reach 
+    the West Bank, where the Valley of the Kings 
+    and the majestic Temple of Hatshepsut await, 
+    offering a glimpse into the opulent afterlife of Egypt's rulers.`,
+  },
+  {
+    id: 3,
+    title: "Sinai",
+    name: "sinai",
+    img: "/img/programs/optional/img-03.png",
+    desciption: `"Sinai: Where rugged landscapes meet ancient history. 
+    Explore the dramatic beauty of desert mountains and pristine beaches, 
+    while uncovering the rich tapestry of Bedouin culture and the timeless 
+    allure of historic sites like Mount Sinai and St. Catherine's Monastery. 
+    Sinai beckons adventurers and seekers alike to discover its unique blend 
+    of natural wonders and spiritual heritage."`,
+  }
+];
+
+
+

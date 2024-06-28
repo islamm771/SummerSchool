@@ -35,19 +35,35 @@ nav a:hover{
     color: white !important;
     font-weight: 800;
 }
-.header-body{
-    position: relative;
-    opacity: 0;
-    visibility: hidden;
-    transition: .5s all;
-    height: 0;
-    overflow: hidden;
+
+header .header-body-info{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
 }
-.header-body.show{
-    opacity: 1;
-    visibility: visible;
-    height: auto;
+
+header .header-body-info h2{
+    font-weight: 800;
+    margin-bottom: 10rem;
+    font-size: 40px;
 }
+
+
+@media (width < 768px){
+    header .header-body-info{
+        top: 50%;
+    }
+    
+    header .header-body-info h2{
+        /* margin-bottom: 7rem; */
+        font-size: 40px;
+    }
+}
+
 
 .header-body img{
     width: 100%;
@@ -65,44 +81,12 @@ nav a:hover{
     height: 100%;
 }
 
-.header-body .header-body-info{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    width: 100%;
+header .splide__pagination{
+    bottom: 60px;
+    gap: 8px;
 }
 
-.header-body .header-body-info h2{
-    font-weight: 800;
-    margin-bottom: 10rem;
-    font-size: 40px;
-}
-
-header .pagination{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    width: 100%;
-}
-
-header .pagination ul{
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-header .pagination ul li span{
+header .splide__pagination__page{
     display: block;
     background-color: #9ACAFF;
     width: 10px;
@@ -111,10 +95,15 @@ header .pagination ul li span{
     cursor: pointer;
 }
 
-header .pagination ul li span.active{
-    width: 50px;
+header .splide__pagination__page.is-active{
+    width: 35px;
+    height: 6px;
     border-radius: 20px;
     background-color: #fff;
+}
+
+header .splide__arrow{
+    display: none;
 }
 
 
@@ -204,6 +193,11 @@ header .pagination ul li span.active{
     background-size: cover;
 }
 
+.explore .container{
+    position: relative;
+    z-index: 5555;
+}
+
 .explore .bell{
     position: absolute;
     top: -50px;
@@ -273,7 +267,7 @@ header .pagination ul li span.active{
 /* .explore .explore-card .explore-card-body img{
     border-radius: 0 0 50px 0;
 } */
-.explore .explore-card .explore-card-body button{
+.explore .explore-card .explore-card-body a{
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -425,3 +419,4 @@ footer .input-email svg{
     top: 7px;
     font-size: 20px;
 }
+

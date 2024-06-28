@@ -53,9 +53,39 @@
             "dest" : "/"
         },
         {
-            "src":"/socialprogram/greek-museum",
+            "src":"/trip/cairo",
+            "dest" : "/"
+        },
+        {
+            "src":"/trip",
+            "dest" : "/"
+        },
+        {
+            "src":"/trip/swia",
+            "dest" : "/"
+        },
+        {
+            "src":"/optional-trip",
+            "dest" : "/"
+        },
+        {
+            "src":"/optional-trip/northcoast",
+            "dest" : "/"
+        },
+        {
+            "src":"/optional-trip/luxor-aswan",
+            "dest" : "/"
+        },
+        {
+            "src":"/optional-trip/sinai",
+            "dest" : "/"
+        },
+        {
+            "src":"/transport/",
             "dest" : "/"
         }
+
+
         
     ]
 }

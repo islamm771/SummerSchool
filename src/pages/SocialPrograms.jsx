@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Social.css"
+import "./Programs.css"
 import { IoChevronBackOutline } from 'react-icons/io5'
 import { LuArrowRight } from 'react-icons/lu'
 import { useNavigate } from 'react-router-dom';

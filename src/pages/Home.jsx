@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import "./home.css";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { FaFacebookF, FaRegEnvelope, FaSnapchatGhost, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaRegEnvelope,
+  FaSnapchatGhost,
+  FaTiktok,
+} from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+
 const Home = () => {
   const [activeHeader, setActiveHeader] = useState(1);
-  const [activeLink , setActiveLink] = useState('home')
+  const [activeLink, setActiveLink] = useState("home");
 
-  
   return (
     <div className="home">
       <header id="home">
@@ -37,7 +44,9 @@ const Home = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a
-                    className={`nav-link ${activeLink === "home" ? "active" : ""}`}
+                    className={`nav-link ${
+                      activeLink === "home" ? "active" : ""
+                    }`}
                     href="#home"
                     onClick={() => setActiveLink("home")}
                   >
@@ -45,27 +54,34 @@ const Home = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a 
-                  href="#about"
-                  className={`nav-link ${activeLink === "about" ? "active" : ""}`}
-                  onClick={() => setActiveLink("about")}
+                  <a
+                    href="#about"
+                    className={`nav-link ${
+                      activeLink === "about" ? "active" : ""
+                    }`}
+                    onClick={() => setActiveLink("about")}
                   >
                     About Us
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a 
-                  href="#programs"
-                  className={`nav-link ${activeLink === "program" ? "active" : ""}`}
-                  onClick={() => setActiveLink("program")}
+                  <a
+                    href="#programs"
+                    className={`nav-link ${
+                      activeLink === "program" ? "active" : ""
+                    }`}
+                    onClick={() => setActiveLink("program")}
                   >
                     Programs
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="#contact"
-                  className={`nav-link ${activeLink === "contact" ? "active" : ""}`}
-                  onClick={() => setActiveLink("contact")}
+                  <a
+                    href="#contact"
+                    className={`nav-link ${
+                      activeLink === "contact" ? "active" : ""
+                    }`}
+                    onClick={() => setActiveLink("contact")}
                   >
                     Contact
                   </a>
@@ -75,93 +91,41 @@ const Home = () => {
           </div>
         </nav>
 
-        <div className={`header-body ${activeHeader == 1 ? "show" : ""}`}>
-          <img src="img/header/img-01.png" alt="" />
-          <div className="header-body-info">
-            <h2>
-              Live Your Life <br /> Through Travel!
-            </h2>
+        <Splide aria-label="My Favorite Images">
+          <SplideSlide>
+            <div className={`header-body`}>
+              <img src="img/header/img-01.png" alt="" />
+              
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className={`header-body`}>
+              <img src="img/header/img-02.png" alt="" />
+              
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className={`header-body`}>
+              <img src="img/header/img-03.png" alt="" />
+              
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className={`header-body`}>
+              <img src="img/header/img-04.png" alt="" />
+              
+            </div>
+          </SplideSlide>
+        </Splide>
 
-            <button className="custom-button">Apply Now</button>
-          </div>
-        </div>
-        <div className={`header-body ${activeHeader == 2 ? "show" : ""}`}>
-          <img src="img/header/img-02.png" alt="" />
-          <div className="header-body-info">
-            <h2>
-              Live Your Life <br /> Through Travel!
-            </h2>
+        <div className="header-body-info">
+                <h2>
+                  Live Your Life <br /> Through Travel!
+                </h2>
 
-            <button className="custom-button">Apply Now</button>
-          </div>
-        </div>
-        <div className={`header-body ${activeHeader == 3 ? "show" : ""}`}>
-          <img src="img/header/img-03.png" alt="" />
-          <div className="header-body-info">
-            <h2>
-              Live Your Life <br /> Through Travel!
-            </h2>
-
-            <button className="custom-button">Apply Now</button>
-          </div>
-        </div>
-        <div className={`header-body ${activeHeader == 4 ? "show" : ""}`}>
-          <img src="img/header/img-04.png" alt="" />
-          <div className="header-body-info">
-            <h2>
-              Live Your Life <br /> Through Travel!
-            </h2>
-
-            <button className="custom-button">Apply Now</button>
-          </div>
-        </div>
-        <div className={`header-body ${activeHeader == 5 ? "show" : ""}`}>
-          <img src="img/header/img-05.png" alt="" />
-          <div className="header-body-info">
-            <h2>
-              Live Your Life <br /> Through Travel!
-            </h2>
-
-            <button className="custom-button">Apply Now</button>
-          </div>
+                <button className="custom-button">Apply Now</button>
         </div>
 
-        <div className="pagination text-white">
-          <ul>
-            <li>
-              <span
-                className={activeHeader == 1 ? "active" : ""}
-                onClick={() => setActiveHeader(1)}
-              ></span>
-            </li>
-            <li>
-              <span
-                className={activeHeader == 2 ? "active" : ""}
-                onClick={() => setActiveHeader(2)}
-              ></span>
-            </li>
-            <li>
-              <span
-                className={activeHeader == 3 ? "active" : ""}
-                onClick={() => setActiveHeader(3)}
-              ></span>
-            </li>
-            <li>
-              <span
-                className={activeHeader == 4 ? "active" : ""}
-                onClick={() => setActiveHeader(4)}
-              ></span>
-            </li>
-            <li>
-              <span
-                className={activeHeader == 5 ? "active" : ""}
-                onClick={() => setActiveHeader(5)}
-              ></span>
-            </li>
-          </ul>
-
-          <p>Keep Scrolling And Start The Journey!</p>
-        </div>
       </header>
 
       <div className="about" id="about">
@@ -224,7 +188,9 @@ const Home = () => {
                   <h3>Social Program</h3>
                 </div>
                 <div className="program-card-footer">
-                  <a href="/socialprogram" className="custom-button">Explore</a>
+                  <a href="/socialprogram" className="custom-button">
+                    Explore
+                  </a>
                 </div>
               </div>
             </div>
@@ -239,7 +205,9 @@ const Home = () => {
                   <h3>Trips</h3>
                 </div>
                 <div className="program-card-footer">
-                  <a href="#" className="custom-button">Explore</a>
+                  <a href="trip" className="custom-button">
+                    Explore
+                  </a>
                 </div>
               </div>
             </div>
@@ -254,7 +222,9 @@ const Home = () => {
                   <h3>Optional Trips</h3>
                 </div>
                 <div className="program-card-footer">
-                  <a href="#" className="custom-button">Explore</a>
+                  <a href="/optional-trip" className="custom-button">
+                    Explore
+                  </a>
                 </div>
               </div>
             </div>
@@ -284,7 +254,9 @@ const Home = () => {
                   src="/img/explore/img-01.png"
                   alt=""
                 />
-                <button className="custom-button">Explore</button>
+                <a href="transport" className="custom-button">
+                  Explore
+                </a>
               </div>
             </div>
             <div className="explore-card explore-card-right">
@@ -297,7 +269,9 @@ const Home = () => {
                   src="/img/explore/img-02.png"
                   alt=""
                 />
-                <button className="custom-button">Explore</button>
+                <a href="/accommodation" className="custom-button">
+                  Explore
+                </a>
               </div>
             </div>
           </div>
@@ -390,7 +364,6 @@ const Home = () => {
                     />
                     <path
                       fillRule="evenodd"
-                      
                       clipRule="evenodd"
                       d="M14.8399 47.4255C15.8062 47.3832 16.7515 47.716 17.4782 48.3542C18.205 48.9924 18.657 49.8868 18.7399 50.8505L23.5899 107.03C23.6721 107.867 23.5828 108.712 23.3276 109.513C23.0724 110.314 22.6566 111.054 22.1056 111.689C21.5546 112.324 20.88 112.84 20.1229 113.205C19.3659 113.57 18.5423 113.778 17.7024 113.814C16.8626 113.851 16.0241 113.715 15.2383 113.417C14.4524 113.118 13.7357 112.663 13.1318 112.078C12.5279 111.493 12.0496 110.791 11.726 110.016C11.4025 109.24 11.2405 108.406 11.2499 107.565V51.1705C11.2503 50.2039 11.6239 49.2748 12.2928 48.577C12.9617 47.8792 13.8742 47.4667 14.8399 47.4255Z"
                       fill="#FBA60A"
@@ -410,32 +383,42 @@ const Home = () => {
         </div>
       </div>
 
-
       <footer id="contact">
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <div className="footer-item">
-                <h5> 
+                <h5>
                   <img src="/img/footer_logo.png" alt="" />
                   Summer School
                 </h5>
 
                 <ul className="social-links">
                   <li>
-                    <a href="#"> <FaFacebookF /> </a>
+                    <a href="#">
+                      {" "}
+                      <FaFacebookF />{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> <FaSnapchatGhost /> </a>
+                    <a href="#">
+                      {" "}
+                      <FaSnapchatGhost />{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> <RiInstagramFill /> </a>
+                    <a href="#">
+                      {" "}
+                      <RiInstagramFill />{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#"> <FaTiktok /> </a>
+                    <a href="#">
+                      {" "}
+                      <FaTiktok />{" "}
+                    </a>
                   </li>
                 </ul>
-
               </div>
             </div>
 
@@ -445,7 +428,7 @@ const Home = () => {
 
                 <ul className="ahmed-info">
                   <li>
-                    <p style={{color:"#FFE457"}}>Ahmed Elyamani</p>
+                    <p style={{ color: "#FFE457" }}>Ahmed Elyamani</p>
                   </li>
                   <li>
                     <p>+201557030100</p>
@@ -453,9 +436,7 @@ const Home = () => {
                   <li>
                     <p>summerschoolalexandria@gmail.com</p>
                   </li>
-                  
                 </ul>
-
               </div>
             </div>
 
@@ -465,17 +446,16 @@ const Home = () => {
 
                 <ul>
                   <li>
-                    <p style={{fontWeight:400}}>
-                    Enter your email to get notified about our programs and trips!
+                    <p style={{ fontWeight: 400 }}>
+                      Enter your email to get notified about our programs and
+                      trips!
                     </p>
                   </li>
                   <li className="input-email">
                     <input type="text" placeholder="Email" />
                     <FaRegEnvelope />
                   </li>
-                  
                 </ul>
-
               </div>
             </div>
           </div>
@@ -486,3 +466,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+

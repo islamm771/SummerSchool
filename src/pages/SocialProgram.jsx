@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { IoChevronBackOutline } from 'react-icons/io5';
 import { useNavigate, useParams } from 'react-router-dom';
 import "./single-social.css"
-import { socialPrograms } from '../data';
+import { optionaTrip, socialPrograms, trip } from '../data';
 import { HiLocationMarker } from 'react-icons/hi';
 
 
@@ -26,8 +26,15 @@ const SocialProgram = () => {
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(program?.title)}`;
     
     useEffect( ()=>{
-        setProgram( socialPrograms.filter( program => program.name == sName )[0] )
+        const prog = socialPrograms.filter( program => program.name == sName )[0] || 
+         trip.filter( program => program.name == sName )[0] ||
+         optionaTrip.filter( program => program.name == sName )[0]
+
+
+
+        setProgram( prog )
     } ,[sName])
+
 
 
   return (
