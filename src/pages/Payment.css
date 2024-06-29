@@ -1,0 +1,39 @@
+.payment-page{
+    background-color: #0077B6;
+}
+.payment-page header{
+    padding: 5rem;
+}
+.payment-page header h3{
+    font-size: 30px;
+}
+.payment-page header h3{
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.payment-page .deadline-wrapper h3{
+    font-size: 30px;
+    margin: 5rem 0;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.payment-page .button-wrapper{
+    padding: 3rem 0;
+}
+.payment-page .custom-button{
+    background-color: #FBA60A;
+    border-color: #FBA60A;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
+
+@media( width < 768px ){
+    .payment-page header{
+        padding: 5rem 0;
+    }
+}

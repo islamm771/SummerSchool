@@ -7,6 +7,8 @@ import SocialProgram from './pages/SocialProgram';
 import Trip from './pages/Trip';
 import OptionalTrip from './pages/OptionalTrip';
 import Transport from './pages/Transport';
+import Payment from './pages/Payment';
+import Accommodation from './pages/Accommodation';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
         <Route path="/optional-trip/:sName" element={<SocialProgram />} />
 
         <Route path="/transport" element={<Transport />} />
+
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/accommodation" element={<Accommodation />} />
 
 
         <Route path="*" element={<div> Not Found </div>} />

@@ -63,7 +63,7 @@ const SocialPrograms = () => {
             {renderPrograms}
           </div>
 
-          <a className='apply-now custom-button' href=""> Apply now </a>
+          <a className='apply-now custom-button' href="/payment"> Apply now </a>
         </div>
       </div>
     </div>

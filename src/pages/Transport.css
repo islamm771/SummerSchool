@@ -7,6 +7,9 @@
     padding: 5rem;
     text-align: center;
 }
+.transport-page header h3{
+    font-weight: 700;
+}
 .transport-page header h3 span{
     color: #FBA60A;
 }
@@ -51,8 +54,12 @@
     line-height: 30px;
 }
 
-
 @media (width < 768px){
+
+    .transport-page header{
+        padding: 5rem 0rem;
+    }
+
     .transport-page .transport-types .transport-type-item,
     .transport-page .transport-types .transport-type-item.right{
         flex-direction: column;

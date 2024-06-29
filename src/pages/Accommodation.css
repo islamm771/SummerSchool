@@ -1,0 +1,33 @@
+.accommodation-page{
+    height: 100vh;
+}
+.accommodation-page header{
+    padding: 5rem;
+    text-align: center;
+}
+.accommodation-page header h3{
+    font-weight: 700;
+}
+.accommodation-page header h3 span{
+    color: #FBA60A;
+}
+
+.accommodation-page .acc-wrapper div div{
+    background-color: #0077B6;
+    padding-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.accommodation-page .acc-wrapper > div:nth-child(2){
+    margin-top: 100px;
+}
+
+@media( width < 768px ){
+    .accommodation-page header{
+        padding: 5rem 0rem;
+        text-align: center;
+    }
+    .accommodation-page .acc-wrapper > div:nth-child(2){
+        margin-top: 0;
+    }
+}
