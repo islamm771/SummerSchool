@@ -83,6 +83,14 @@
         {
             "src":"/transport",
             "dest" : "/"
+        },
+        {
+            "src":"/payment",
+            "dest" : "/"
+        },
+        {
+            "src":"/accommodation",
+            "dest" : "/"
         }
 
 
