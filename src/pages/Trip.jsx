@@ -58,7 +58,7 @@ const Trip = () => {
             {renderPrograms}
           </div>
 
-          <a className="apply-now custom-button" href="">
+          <a className="apply-now custom-button" href="/payment">
             {" "}
             Apply now{" "}
           </a>
