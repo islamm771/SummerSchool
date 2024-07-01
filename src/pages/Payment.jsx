@@ -40,19 +40,19 @@ const Payment = () => {
                 </div>
                 <div className="col-md-4">
                     <div>
-                        <img className='img-fluid' src="/img/deadline/img-01.png" alt="" />
+                        <img className='img-fluid' src="/img/deadline/img-02.png" alt="" />
                     </div>
                 </div>
             </div>
             <div className="row justify-content-end">
                 <div className="col-md-4 mb-4 mb-md-0">
                     <div>
-                        <img className='img-fluid' src="/img/deadline/img-01.png" alt="" />
+                        <img className='img-fluid' src="/img/deadline/img-03.png" alt="" />
                     </div>
                 </div>
                 <div className="col-md-4">
                     <div>
-                        <img className='img-fluid' src="/img/deadline/img-01.png" alt="" />
+                        <img className='img-fluid' src="/img/deadline/img-04.png" alt="" />
                     </div>
                 </div>
             </div>
