@@ -9,7 +9,7 @@
             "dest" : "/"
         },
         {
-            "src":"/socialprogram/montazah-palace",
+            "src":"/socialprogram/citadel-of-qaitbay",
             "dest" : "/"
         },
         {
@@ -50,6 +50,10 @@
         },
         {
             "src":"/socialprogram/arous-elBahr-restaurant",
+            "dest" : "/"
+        },
+        {
+            "src":"/socialprogram/al-Mursi-abu-al-Abbas",
             "dest" : "/"
         },
         {
