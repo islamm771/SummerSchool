@@ -246,7 +246,7 @@ const Home = () => {
           <div className="explore-card-wrapper">
             <div className="explore-card explore-card-left">
               <div className="explore-card-header">
-                <h3>Trips</h3>
+                <h3>Transportation</h3>
               </div>
               <div className="explore-card-body">
                 <img

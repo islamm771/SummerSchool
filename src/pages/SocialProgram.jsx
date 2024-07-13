@@ -40,7 +40,7 @@ const SocialProgram = () => {
   return (
     <div className="single-social-program">
         <section style={{ backgroundImage: `url(${program.img})` }}>
-            <div className="container text-center position-relative">
+            <div className="container text-center position-relative mt-5">
                 <h1> <span>{program.title}</span> </h1>
                 <p> {program.desciption} </p>
 

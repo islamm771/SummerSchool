@@ -9,11 +9,11 @@
             "dest" : "/"
         },
         {
-            "src":"/socialprogram/citadel-of-qaitbay",
+            "src":"/socialprogram/royal-jewelry-museum",
             "dest" : "/"
         },
         {
-            "src":"/socialprogram/montazah-palace",
+            "src":"/socialprogram/citadel-of-qaitbay",
             "dest" : "/"
         },
         {
@@ -57,15 +57,15 @@
             "dest" : "/"
         },
         {
-            "src":"/trip/cairo",
-            "dest" : "/"
-        },
-        {
             "src":"/trip",
             "dest" : "/"
         },
         {
-            "src":"/trip/swia",
+            "src":"/trip/cairo",
+            "dest" : "/"
+        },
+        {
+            "src":"/trip/siwa",
             "dest" : "/"
         },
         {

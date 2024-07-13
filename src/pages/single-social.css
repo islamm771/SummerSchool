@@ -2,6 +2,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     place-items: center;
@@ -24,11 +25,13 @@
 .single-social-program section h1 span{
     padding: 20px 0;
     position: relative;
+    display: inline-block;
 }
 .single-social-program section h1 span::after{
     content: "";
     position: absolute;
-    width: calc(100% + 50px);
+    /* width: calc(100% + 50px); */
+    width: 90%;
     bottom: 0;
     left: 50%;
     background-color: #5EAAFF;
@@ -51,3 +54,9 @@
     border-radius: 25px;
 }
 
+
+@media (width <= 768px){
+    .single-social-program section p{
+        width: 100%;
+    }
+}

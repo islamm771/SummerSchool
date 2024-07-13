@@ -1,16 +1,17 @@
 export const socialPrograms = [
   {
     id: 1,
-    title: "Montazah Palace",
-    name: "montazah-palace",
+    title: "Royal Jewelry Museum",
+    name: "royal-jewelry-museum",
     img: "/img/programs/social/img-01.png",
-    desciption: `Montazah Palace is a historical 
-        palace located in the Montazah district of Alexandria, 
-        Egypt. The palace complex is situated along the Mediterranean Sea,
-         making it a popular destination for both locals and tourists.The palace is a 
-         blend of Turkish and Florentine architectural style .It also is surrounded by
-          extensive gardens,which are beautifully landscaped and feature a variety of trees, 
-          flowers, and recreational areas.`,
+    desciption: `The Royal Jewelry Museum in Alexandria, 
+    Egypt, is housed in the luxurious palace of Princess 
+    Fatma Al-Zahra. It features a stunning collection of jewelry and artifacts 
+    from the Egyptian royal family, the Muhammad Ali Dynasty. 
+    Highlights include crowns, tiaras, and necklaces, 
+    showcasing the opulence of Egypt's royal past. 
+    The museum's exquisite architecture adds to its allure, 
+    making it a must-visit for history and jewelry enthusiasts.`,
   },
   {
     id: 2,
