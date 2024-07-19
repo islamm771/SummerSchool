@@ -12,7 +12,6 @@ import { RiInstagramFill } from "react-icons/ri";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const Home = () => {
-  const [activeHeader, setActiveHeader] = useState(1);
   const [activeLink, setActiveLink] = useState("home");
 
   return (

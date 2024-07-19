@@ -10,12 +10,14 @@ const SocialPrograms = () => {
 
     const renderPrograms = socialPrograms.map( program => (
         <div className="col-md-5 mb-4" key={program.id}>
-                <div className="program-card">
+            <div className="program-card">
+              <a href={`/socialprogram/${program.name}`}>
                 <img className='img-fluid' src={program.img} alt="" />
                 <div className="program-card-body">
                     <h3>{program.title}</h3>
                     <a href={`/socialprogram/${program.name}`}> Learn more <LuArrowRight /> </a>
                 </div>
+              </a>
             </div>
         </div>
 ) )

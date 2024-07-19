@@ -10,13 +10,15 @@ const Trip = () => {
 
     const renderPrograms = trip.map( program => (
         <div className="col-md-5 mb-4" key={program.id}>
-                <div className="program-card trips">
+            <div className="program-card trips">
+              <a href={`/trip/${program.name}`} className='text-white'>
                 <img className='img-fluid' src={program.img} alt="" />
                 <div className="program-card-body">
                     <h3>{program.title}</h3>
                     <a href={`/trip/${program.name}`}> Learn more <LuArrowRight /> </a>
                     <GiCommercialAirplane className='plane' size={70} />
                 </div>
+              </a>
             </div>
         </div>
 ) )
